@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<script>
+		var shiftWindow = function() { scrollBy(0, -30) };
+		window.addEventListener("hashchange", shiftWindow);
+		function load() { if (window.location.hash) shiftWindow(); }
+	</script>
+  
+    <!-- Required meta tags -->
+	<title>Hawaii Emergency Response Message Engagement System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="./hermes.css">
+	
+	<!-- Additional jQuery functionality -->
+	<script src="https://code.jquery.com/jquery-1.11.0.js"></script>
+
+  
+  </head>
+  <body>
+		<!-- Navigation -->
+		<nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-light">
+			<span class="border-bottom"></span>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<img src="./hawaiianislands.jpg" width="120" height="55" alt="Map of the Hawaiian Islands">
+			</a>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown" id="HomeNavHeading">
+						<a style="font-size:25px" class="nav-link dropdown-toggle" href="#" id="HomeNavBar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <strong>H.E.R.M.E.S</strong>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="HomeNavDropDown">
+						  <a class="dropdown-item" href="#">Back To Top</a>
+						</div>		
+					<li class="nav-item dropdown" id="TestNavHeading">
+						<a style="font-size:25px" class="nav-link dropdown-toggle" href="http://example.com" id="TestNavbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <strong>TEST Missile Warning</strong>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="TestNavDropDown">
+						  <a class="dropdown-item" href="#test_description">TEST Description and Procedure</a>
+						</div>			
+					</li>
+					<li class="nav-item dropdown" id="ActualNavHeading">
+						<a style="font-size:25px" class="nav-link dropdown-toggle" href="http://example.com" id="ActualNavbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <strong>ACTUAL Missile Warning</strong>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="ActualNavDropDown">
+						  <a class="dropdown-item" href="#actual_description">ACTUAL Description and Procedure</a>
+						</div>
+				</ul>
+			</div>
+		</nav>
+		<!-- /Navigation -->
+		
+		<!-- Main jumbotron -->
+		<div class="jumbotron jumbotron-fluid text-center bg-light mb-0" id="MainJumbotron">
+			<div class="container">
+				<span class="border-top"></span>
+				<h2 class="display-3" id="acronym">H.E.R.M.E.S.</h2>
+				<h2 class="display-4">Hawaii Emergency Response Message Engagement System</h2>
+			</div>
+		</div> 
+		<!-- /Main jumbotron -->
+		
+		<!-- Hawaii on a good day -->
+		
+		<div class="container-fluid" id="best_case">
+			<img src="./hawaii_panorama.jpg" class="img-fluid" width="100%" height="100%" alt="Hawaii on a good day">
+		</div>
+		
+		<div class="jumbotron jumbotron-fluid text-center" id="test_description">
+				<div class="container">
+					<span class="border-top"></span>
+					<h2 class="display-4" id="test_description_heading">Test Description</h2>
+					<h3 class="display-5">Initiating TEST will utilize the H.E.R.M.E.S. system to send the following text message to all Hawaiian residents within cell phone range: "THIS IS A TEST OF THE HAWAIIAN EMERGENCY RESPONSE MESSAGE ENGAGEMENT SYSTEM. THIS IS ONLY A TEST."</h3>
+				</div>
+		</div> 
+		
+		<div class="container-fluid" id="test_checklist">
+			<div>
+				<input type="checkbox" name="instructed_test" value="" class="checkbox" id="instructed_test"/>	
+				<label>I was instructed by my supervisor to initiate an island-wide TEST.</label>			
+			</div>
+			<div>
+				<input type="checkbox" name="understand_test" value="" class="checkbox" id="understand_test"/>
+				<label>I understand that this will send a TEST message to all Hawaiian residents.</label>				
+			</div>
+			<div>
+				<input type="checkbox" name="verified_test" value="" class="checkbox" id="verified_test"/>	
+				<label>I have verified that the instructions are to initiate a TEST.</label>							
+			</div>
+			<div>
+				<input type="checkbox" name="proceed_test" value="" class="checkbox" id="proceed_test"/>
+				<label>I am ready to initiate an island-wide TEST of H.E.R.M.E.S.</label>								
+			</div>
+			<div class="container-fluid">			
+				<button type="submit" class="TEST" id="initiate_test" onsubmit="test_alert()" disabled="disabled">TEST H.E.R.M.E.S. SYSTEM</button>
+			</div>
+		</div>	
+					
+		<!-- /Hawaii on a good day -->
+		
+		<!-- Hawaii on a bad day -->
+		
+		<div class="container-fluid" id="worst_case">
+			<img src="./lava_panorama.jpg" class="img-fluid" width="100%" height="100%" alt="Hawaii on a bad day">
+		</div>
+		
+		<div class="jumbotron jumbotron-fluid text-center" id="actual_description">
+				<div class="container">
+					<span class="border-top"></span>
+					<h2 class="display-4" id="test_description_heading">ACTUAL Description</h2>
+					<h3 class="display-5">Initiating an ACTUAL MISSILE THREAT ALERT will utilize the H.E.R.M.E.S. system to send the following text message to all Hawaiian residents within cell range: "INCOMING BALLISTIC MISSILES HAVE BEEN DETECTED AND VERIFIED. THIS IS NOT A TEST. TAKE COVER IMMEDIATELY."</h3>
+				</div>
+		</div> 
+		
+		<div class="container-fluid" id="actual_checklist">
+			<div>
+				<input type="checkbox" name="instructed_test" value="" class="checkbox" id="instructed_actual"/>
+				<label>I was instructed by my supervisor to initiate an ACTUAL MISSILE THREAT ALERT.</label>					
+			</div>
+			<div>
+				<input type="checkbox" name="understand_test" value="" class="checkbox" id="understand_actual"/>
+				<label>I understand that this will send an ACTUAL MISSILE THREAT message to all Hawaiian residents.</label>							
+			</div>
+			<div>
+				<input type="checkbox" name="verified_test" value="" class="checkbox" id="verified_actual"/>
+				<label>I have verified that the instructions are to initiate an ACTUAL MISSILE THREAT ALERT.</label>							
+			</div>
+			<div>
+				<input type="checkbox" name="proceed_test" value="" class="checkbox" id="proceed_actual"/>
+				<label>The threat and instructions are valid and I am ready to initiate an ACTUAL MISSILE THREAT ALERT.</label>						
+			</div>
+			<div class="container-fluid">			
+				<button type="submit" class="ACTUAL" id="initiate_actual" onsubmit="actual_alert()" disabled="disabled">INITIATE ACTUAL MISSILE THREAT ALERT</button>
+			</div>
+		</div>	
+		
+		<!-- /Hawaii on a bad day -->
+
+    <!-- additional bootstrap dependency urls -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+	<script>
+	
+	$(function() {
+		$('.checkbox').click(function(){
+			if (document.getElementById("instructed_test").checked
+			&& document.getElementById("verified_test").checked
+			&& document.getElementById("understand_test").checked
+			&& document.getElementById("proceed_test").checked)
+				$('.TEST').prop('disabled',$('input.checkbox:checked').length == 0);
+		});
+	});
+	
+	$(function() {
+		$('.checkbox').click(function(){
+			if (document.getElementById("instructed_actual").checked
+			&& document.getElementById("verified_actual").checked
+			&& document.getElementById("understand_actual").checked
+			&& document.getElementById("proceed_actual").checked)
+				$('.ACTUAL').prop('disabled',$('input.checkbox:checked').length == 0);
+		});
+	});
+	
+	$(function test_alert() {
+		$('.TEST').click(function() {
+			alert("You have initiated a TEST of the H.E.R.M.E.S. system.");
+		});
+	});
+	
+	$(function actual_alert() {
+		$('.ACTUAL').click(function() {
+			alert("You have initiated an ACTUAL MISSILE THREAT ALERT to the residents of Hawaii.");
+		});
+	});
+	
+	</script>
+	</body>
+</html>

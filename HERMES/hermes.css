@@ -1,0 +1,122 @@
+.navbar {
+	background-color:#ffffcc;
+}
+
+#HomeNavHeading {
+	background-color:#d9d9d9;
+	padding-right:10px;
+}
+
+#HomeNavDropDown {
+	background-color:#d9d9d9;
+}
+
+#HomeNavDropDown a:hover {
+	background-color:#e6e6e6;
+}
+
+#TestNavHeading {
+	background-color:#ccffb3;
+}
+
+#TestNavDropDown {
+	background-color:#ccffb3;
+}
+
+#TestNavDropDown a:hover {
+	background-color:#d9ffcc;
+}
+
+#ActualNavHeading {
+	background-color:#ffcccc;
+}
+
+#ActualNavDropDown {
+	background-color:#ffcccc;
+}
+
+#ActualNavDropDown a:hover {
+	background-color:#ffe6e6;
+}
+
+.dropdown-item {
+	font-family:Helvetica;
+	font-weight:bold;
+}
+
+#MainJumbotron {
+	margin-top:40px;
+	background-color:#99ccff;
+	padding-bottom:20px;	
+}
+
+#acronym {
+	padding-top:10px;
+	font-size:60px;
+	font-weight:bold;
+}
+
+h2 {
+	color:#000;
+}
+
+h3 {
+	font-family:Lucida Console;
+}
+
+#best_case {
+	padding:0px;
+}
+
+#test_description {
+	background-color:#ccffb3;
+	padding-bottom:20px;
+	margin-bottom:0px;
+}
+
+#test_checklist {
+	padding-top:25px;
+	border-top:2px solid #000;
+	background-color:#ccffb3;
+	text-align:center;
+}
+
+label {
+	font-size:30px;
+	font-family:serif;
+}
+
+button.TEST{
+	color:green;
+	font-size:30px;
+	font-family:serif;
+	margin-bottom:45px;
+}
+
+#test_description_heading {
+	font-weight:bold;
+}
+
+#worst_case {
+	padding:0px;
+}
+
+#actual_description {
+	background-color:#ffcccc;
+	padding-bottom:20px;
+	margin-bottom:0px;
+}
+
+#actual_checklist {
+	padding-top:25px;
+	border-top:2px solid #000;
+	background-color:#ffcccc;
+	text-align:center;
+}
+
+button.ACTUAL {
+	color:red;
+	font-size:30px;
+	font-family:serif;
+	margin-bottom:45px;
+}
